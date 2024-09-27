@@ -1,0 +1,42 @@
+import CartItem from "./CartItem"
+import { useState } from "react"
+
+const DataItems = () => {
+
+    const [dataItems, setDataItems] = useState([])
+
+    async function getDataItems(){
+        try{
+            let URL = "https://fakestoreapi.com/products?limit=5"
+            const res = await fetch(URL)
+            const result = await res.json()
+
+            setDataItems(result)
+        }catch(e){
+            console.log(e)
+        }
+    }
+
+    getDataItems()
+
+    return (
+        <>
+        <div>
+            {dataItems.length == 0 ?
+            <h1>Memuat Data....</h1> :
+            <div>
+                {dataItems.map((item) => (
+                    <div key={item.id}>
+                       <CartItem gambar={item.image} harga={item.price} /> 
+                    </div>
+                ))}
+            </div>
+            
+            }
+        </div>
+        
+        </>
+    )
+}
+
+export default DataItems
