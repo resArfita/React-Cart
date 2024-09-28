@@ -1,8 +1,10 @@
+/* eslint-disable react/prop-types */
 import CartItem from "./CartItem"
 import { useState } from "react"
 
-const DataItems = () => {
+const DataItems = ({ counterKurang, counterTambah }) => {
 
+    //fetching data
     const [dataItems, setDataItems] = useState([])
 
     async function getDataItems(){
@@ -27,7 +29,12 @@ const DataItems = () => {
             <div>
                 {dataItems.map((item) => (
                     <div key={item.id}>
-                       <CartItem gambar={item.image} harga={item.price} /> 
+                       <CartItem
+                        gambar={item.image}
+                        harga={item.price} 
+                        counterKurang={counterKurang} 
+                        counterTambah={counterTambah}
+                        /> 
                     </div>
                 ))}
             </div>

@@ -1,14 +1,26 @@
 import NavBar from "./components/Navbar"
 //import Counter from "./components/Counter"
-//import { useState } from "react"
-import DataItems from "./components/DataItems"
+import { useState } from "react"
+//import DataItems from "./components/DataItems"
+import CartList from "./components/CartList"
 
 function App() {
 
+  //State jumlah kuantitas Item
+  const [quantity, setQuantity] = useState(5)
+
+  const counterKurang = () => {
+    quantity > 5 ? setQuantity(quantity - 1) : quantity
+  }
+
+  const counterTambah = () => {
+    setQuantity(quantity + 1)
+  }
+
   return (
     <>
-      <NavBar />
-      <DataItems />
+      <NavBar size={quantity} />
+      <CartList counterKurang={counterKurang} counterTambah={counterTambah} />
 
     </>
   )
