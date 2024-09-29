@@ -1,4 +1,4 @@
-import NavBar from "./components/Navbar"
+import Navbar from "./components/Navbar"
 import { useState } from "react"
 import CartList from "./components/CartList"
 
@@ -18,7 +18,7 @@ function App() {
 
   return (
     <>
-      <NavBar size={quantity} />
+      <Navbar size={quantity} />
       <CartList counterKurang={counterKurang} counterTambah={counterTambah} />
 
     </>
