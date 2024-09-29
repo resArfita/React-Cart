@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState, useEffect } from "react"
+import "../components/counter.css"
 
 const Counter = ({ counterKurang, counterTambah, price }) => {
 
@@ -30,7 +31,7 @@ const Counter = ({ counterKurang, counterTambah, price }) => {
                 <button onClick={() => {counterTambah(); tambahList()}} className="px-2 focus:ring-2 bg-indigo-500 hover:bg-violet-600 text-white">+</button> 
             </div>
             <div className="ml-20 w-fit">
-                <p className="ml-20">$<span className="font-medium">{hargaItem}</span></p>     
+                <p className="bg-red-500 harga">$<span className="font-medium">{hargaItem}</span></p>     
             </div>
             
         </div>

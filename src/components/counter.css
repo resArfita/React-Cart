@@ -1,0 +1,15 @@
+.harga{
+    margin: 0 0 0 8rem;
+}
+
+@media (max-width: 630px) {
+    .harga {
+      margin-left: 2rem;
+    }
+}
+
+@media (max-width: 720px) {
+    .harga {
+      margin-left: 10px;
+    }
+}
