@@ -1,7 +1,5 @@
 import NavBar from "./components/Navbar"
-//import Counter from "./components/Counter"
 import { useState } from "react"
-//import DataItems from "./components/DataItems"
 import CartList from "./components/CartList"
 
 function App() {

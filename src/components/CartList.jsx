@@ -9,10 +9,10 @@ const CartList = ({ counterKurang, counterTambah }) => {
         <>
         <div className="">
             <div className="grid grid-cols-4 ml-20 pt-5">
-                <p>Item</p>
-                <p>Harga</p>
-                <p>Kuantitas</p>
-                <p>Total</p>
+                <p className="underline decoration-violet-800">Item</p>
+                <p className="underline decoration-violet-800">Harga</p>
+                <p className="underline decoration-violet-800">Kuantitas</p>
+                <p className="underline decoration-violet-800">Total Harga</p>
             </div>
             <DataItems counterKurang={counterKurang} counterTambah={counterTambah} />
         </div>
