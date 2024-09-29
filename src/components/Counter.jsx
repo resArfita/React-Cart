@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState, useEffect } from "react"
-//import "../components/counter.css"
+import "../components/counter.css"
 
 const Counter = ({ counterKurang, counterTambah, price }) => {
 
