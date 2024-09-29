@@ -1,9 +1,7 @@
 /* eslint-disable react/prop-types */
 import DataItems from "./DataItems"
-//import { useState } from "react"
 
 const CartList = ({ counterKurang, counterTambah }) => {
-    //supposed to get quantity from CartItem/DataItems
 
     return (
         <>
