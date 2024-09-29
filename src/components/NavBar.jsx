@@ -4,7 +4,7 @@ import "../components/navbar.css"
 import cartImage from "../assets/cart.png"
 
 // eslint-disable-next-line react/prop-types
-const NavBar = ({size}) => {
+const Navbar = ({size}) => {
     return(
         <>
         <div className="header border-b-4 border-indigo-500 flex flex-row justify-between px-20 pt-3 bg-indigo-500 text-white">
@@ -22,4 +22,4 @@ const NavBar = ({size}) => {
     )
 }
 
-export default NavBar
+export default Navbar
