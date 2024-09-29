@@ -4,7 +4,7 @@ import "../components/navbar.css"
 const NavBar = ({size}) => {
     return(
         <>
-        <div className="header border-b-4 border-indigo-500 flex flex-row justify-between p-5 bg-indigo-500 text-white">
+        <div className="header border-b-4 border-indigo-500 flex flex-row justify-between px-20 py-5 bg-indigo-500 text-white">
             <div className="logo">
                 <h1>ResArft</h1>
             </div>

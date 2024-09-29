@@ -1,8 +1,8 @@
 import Counter from "./Counter"
+//import { useState, useEffect } from "react"
 
 // eslint-disable-next-line react/prop-types
-const CartItem = ({ gambar, harga, counterKurang, counterTambah }) => {
-
+const CartItem = ({ gambar, harga, counterKurang, counterTambah, price }) => {
 
     return (
         <>
@@ -12,8 +12,9 @@ const CartItem = ({ gambar, harga, counterKurang, counterTambah }) => {
             <Counter
              counterKurang={counterKurang} 
              counterTambah={counterTambah}
+             price={price}
              />
-            <p className="m-10">$<span className="font-normal">{harga}</span></p>
+            
         </div>
         </>
     )

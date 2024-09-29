@@ -4,7 +4,7 @@ import { useState } from "react"
 
 const DataItems = ({ counterKurang, counterTambah }) => {
 
-    //fetching data
+    //fetching data dari API
     const [dataItems, setDataItems] = useState([])
 
     async function getDataItems(){
@@ -34,6 +34,7 @@ const DataItems = ({ counterKurang, counterTambah }) => {
                         harga={item.price} 
                         counterKurang={counterKurang} 
                         counterTambah={counterTambah}
+                        price={item.price}
                         /> 
                     </div>
                 ))}
