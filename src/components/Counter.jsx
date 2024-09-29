@@ -19,7 +19,7 @@ const Counter = ({ counterKurang, counterTambah, price }) => {
     //update harga tiap kali quantity/kuantitas item berubah
     useEffect(() => {
         setHargaItem(quantityList * price)
-    }, [quantityList])
+    }, [price, quantityList])
 
     return (
         <>
