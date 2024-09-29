@@ -1,6 +1,4 @@
 import Counter from "./Counter"
-//import { useState, useEffect } from "react"
-
 // eslint-disable-next-line react/prop-types
 const CartItem = ({ gambar, harga, counterKurang, counterTambah, price }) => {
 
